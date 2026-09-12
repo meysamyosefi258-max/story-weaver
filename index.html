@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داستان‌ساز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>داستان‌ساز</h1>
+        <p class="subtitle">کلمات خود را وارد کنید (هر کلمه در یک سطر)</p>
+        
+        <div class="input-section">
+            <textarea id="wordsInput" placeholder="کلمه اول
+کلمه دوم
+کلمه سوم
+..."></textarea>
+            <button id="generateBtn" class="btn btn-primary">تولید داستان</button>
+        </div>
+
+        <div class="output-section" id="outputSection" style="display: none;">
+            <div class="story-container">
+                <p id="storyOutput"></p>
+            </div>
+            <button id="copyBtn" class="btn btn-copy">کپی کردن داستان</button>
+            <div id="copyMessage" class="copy-message" style="display: none;">
+                ✓ داستان کپی شد!
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
